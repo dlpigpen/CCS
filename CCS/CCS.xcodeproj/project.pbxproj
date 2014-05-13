@@ -25,6 +25,10 @@
 		6C4B08BF192229CD002EC823 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C4B0897192229CD002EC823 /* UIKit.framework */; };
 		6C4B08C7192229CD002EC823 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C4B08C5192229CD002EC823 /* InfoPlist.strings */; };
 		6C4B08C9192229CD002EC823 /* CCSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4B08C8192229CD002EC823 /* CCSTests.m */; };
+		6C4B08FC19222AB3002EC823 /* Grid.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 6C4B08FA19222AB3002EC823 /* Grid.atlas */; };
+		6C4B08FD19222AB3002EC823 /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 6C4B08FB19222AB3002EC823 /* Sprites.atlas */; };
+		6C4B090019222E1A002EC823 /* DNCookie.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4B08FF19222E1A002EC823 /* DNCookie.m */; };
+		6C4B090319222F90002EC823 /* DNLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4B090219222F90002EC823 /* DNLevel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,12 @@
 		6C4B08C4192229CD002EC823 /* CCSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CCSTests-Info.plist"; sourceTree = "<group>"; };
 		6C4B08C6192229CD002EC823 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6C4B08C8192229CD002EC823 /* CCSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCSTests.m; sourceTree = "<group>"; };
+		6C4B08FA19222AB3002EC823 /* Grid.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Grid.atlas; sourceTree = "<group>"; };
+		6C4B08FB19222AB3002EC823 /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
+		6C4B08FE19222E1A002EC823 /* DNCookie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNCookie.h; path = CCS/DNCookie.h; sourceTree = SOURCE_ROOT; };
+		6C4B08FF19222E1A002EC823 /* DNCookie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNCookie.m; path = CCS/DNCookie.m; sourceTree = SOURCE_ROOT; };
+		6C4B090119222F90002EC823 /* DNLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNLevel.h; sourceTree = "<group>"; };
+		6C4B090219222F90002EC823 /* DNLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNLevel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +133,7 @@
 		6C4B089B192229CD002EC823 /* CCS */ = {
 			isa = PBXGroup;
 			children = (
+				6C4B08D419222A8E002EC823 /* Resources */,
 				6C4B08A4192229CD002EC823 /* DNAppDelegate.h */,
 				6C4B08A5192229CD002EC823 /* DNAppDelegate.m */,
 				6C4B08A7192229CD002EC823 /* Main_iPhone.storyboard */,
@@ -132,6 +143,10 @@
 				6C4B08B0192229CD002EC823 /* DNMyScene.h */,
 				6C4B08B1192229CD002EC823 /* DNMyScene.m */,
 				6C4B08B3192229CD002EC823 /* Spaceship.png */,
+				6C4B08FE19222E1A002EC823 /* DNCookie.h */,
+				6C4B08FF19222E1A002EC823 /* DNCookie.m */,
+				6C4B090119222F90002EC823 /* DNLevel.h */,
+				6C4B090219222F90002EC823 /* DNLevel.m */,
 				6C4B08B5192229CD002EC823 /* Images.xcassets */,
 				6C4B089C192229CD002EC823 /* Supporting Files */,
 			);
@@ -165,6 +180,15 @@
 				6C4B08C5192229CD002EC823 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6C4B08D419222A8E002EC823 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6C4B08FA19222AB3002EC823 /* Grid.atlas */,
+				6C4B08FB19222AB3002EC823 /* Sprites.atlas */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +269,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C4B08B4192229CD002EC823 /* Spaceship.png in Resources */,
+				6C4B08FD19222AB3002EC823 /* Sprites.atlas in Resources */,
+				6C4B08FC19222AB3002EC823 /* Grid.atlas in Resources */,
 				6C4B08B6192229CD002EC823 /* Images.xcassets in Resources */,
 				6C4B08AC192229CD002EC823 /* Main_iPad.storyboard in Resources */,
 				6C4B08A9192229CD002EC823 /* Main_iPhone.storyboard in Resources */,
@@ -267,10 +293,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C4B090319222F90002EC823 /* DNLevel.m in Sources */,
 				6C4B08B2192229CD002EC823 /* DNMyScene.m in Sources */,
 				6C4B08A6192229CD002EC823 /* DNAppDelegate.m in Sources */,
 				6C4B08AF192229CD002EC823 /* DNViewController.m in Sources */,
 				6C4B08A2192229CD002EC823 /* main.m in Sources */,
+				6C4B090019222E1A002EC823 /* DNCookie.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +515,7 @@
 				6C4B08CE192229CD002EC823 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6C4B08CF192229CD002EC823 /* Build configuration list for PBXNativeTarget "CCSTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +524,7 @@
 				6C4B08D1192229CD002EC823 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
